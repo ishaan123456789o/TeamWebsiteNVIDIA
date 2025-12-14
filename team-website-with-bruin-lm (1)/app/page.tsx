@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Github, Sparkles, Code2, Brain, GitBranch, Users } from "lucide-react"
+import { Github, Sparkles, Code2, Brain, GitBranch, Users, Mail } from "lucide-react"
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
             </p>
             <p className="mb-8 text-lg text-muted-foreground text-pretty leading-relaxed">
               Our most recent creation is BruinLM, an AI-powered course assistant for UCLA students that combines our
-              passion for education technology with cutting-edge generative AI.
+              passion for building via Generative AI with our school spirit.
             </p>
             <Button size="lg" className="gap-2" asChild>
               <a href="https://github.com/JasonFast23/BruinLM" target="_blank" rel="noopener noreferrer">
@@ -113,7 +113,7 @@ export default function Home() {
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-6 text-3xl font-bold tracking-tight md:text-4xl">Why We Work Well Together</h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8 text-pretty">
-            Building BruinLM wasn't just about writing code—it was about constantly challenging each other's ideas,
+            Building BruinLM wasn't just about writing code; it was about constantly challenging each other's ideas,
             iterating quickly, and staying excited about what we were creating. We complement each other's strengths and
             push each other to think bigger.
           </p>
@@ -121,6 +121,37 @@ export default function Home() {
             Whether it's integrating the latest AI models, designing intuitive interfaces, or solving complex technical
             challenges, we bring energy and curiosity to everything we build.
           </p>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="border-b border-border bg-muted/30">
+        <div className="container mx-auto px-4 py-16 md:py-24">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="mb-8 text-3xl font-bold tracking-tight md:text-4xl">Get in Touch</h2>
+            <div className="flex flex-col gap-6 sm:flex-row sm:justify-center sm:gap-12">
+              <div className="flex flex-col items-center gap-2">
+                <p className="text-sm font-semibold text-muted-foreground">Ishaan Saraswat</p>
+                <a 
+                  href="mailto:isaraswa28@ucla.edu" 
+                  className="flex items-center gap-2 text-lg text-foreground hover:text-primary transition-colors"
+                >
+                  <Mail className="h-5 w-5" />
+                  isaraswa28@ucla.edu
+                </a>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <p className="text-sm font-semibold text-muted-foreground">Abhiram Voleti</p>
+                <a 
+                  href="mailto:abhiramvoleti@gmail.com" 
+                  className="flex items-center gap-2 text-lg text-foreground hover:text-primary transition-colors"
+                >
+                  <Mail className="h-5 w-5" />
+                  abhiramvoleti@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
